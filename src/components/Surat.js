@@ -3,7 +3,7 @@ import { Card, Col, Row } from "react-bootstrap";
 
 const Surat = ({ surat }) => {
 	return (
-		<Card className="my-3 p-3">
+		<Card className="my-3 p-3 surat">
 			<Row>
 				<Col sm={3}>
 					<div as="h6">{surat.nomor}</div>
