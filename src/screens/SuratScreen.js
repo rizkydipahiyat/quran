@@ -32,9 +32,6 @@ const SuratScreen = ({ match }) => {
 									<cite title="Source Title">Artinya: {item.id}</cite>
 								</div>
 							</Col>
-							<Col>
-								<div className="text-center"></div>
-							</Col>
 						</Card>
 					))}
 				</Row>

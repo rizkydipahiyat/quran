@@ -1,13 +1,13 @@
 .surat {
-	height: 86px;
+	text-align: center;
 }
 .link {
 	text-decoration: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 475px) {
 	.surat {
-		height: 120px;
+		height: 110px;
 		text-align: center;
 	}
 }
