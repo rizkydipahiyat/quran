@@ -3,11 +3,9 @@ import axios from "axios";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Surat from "../components/Surat";
-import Loader from "../components/Loader";
 
 const HomeScreen = () => {
 	const [data, setData] = useState([]);
-	const [isLoading, setIsLoading] = useState();
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -20,19 +18,15 @@ const HomeScreen = () => {
 	}, []);
 	return (
 		<>
-			{isLoading ? (
-				<Loader />
-			) : (
-				<Row>
-					{data.map((item) => (
-						<Col sm={4} key={item.nomor}>
-							<Link className="link" to={`/surat/${item.nomor}`}>
-								<Surat surat={item} />
-							</Link>
-						</Col>
-					))}
-				</Row>
-			)}
+			<Row>
+				{data.map((item) => (
+					<Col sm={4} key={item.nomor}>
+						<Link className="link" to={`/surat/${item.nomor}`}>
+							<Surat surat={item} />
+						</Link>
+					</Col>
+				))}
+			</Row>
 		</>
 	);
 };

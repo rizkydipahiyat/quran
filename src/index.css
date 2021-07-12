@@ -4,3 +4,10 @@
 .link {
 	text-decoration: none;
 }
+
+@media (min-width: 375px) {
+	.surat {
+		height: 120px;
+		text-align: center;
+	}
+}

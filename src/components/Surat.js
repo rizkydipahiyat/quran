@@ -13,7 +13,7 @@ const Surat = ({ surat }) => {
 					<div style={{ fontSize: "12px" }}>{surat.arti} </div>
 				</Col>
 				<Col sm={4}>
-					<div as="h6">{surat.asma}</div>
+					<div as="h5">{surat.asma}</div>
 				</Col>
 			</Row>
 		</Card>
